@@ -1,0 +1,7 @@
+def rotate_right(ist,k):
+  if k > 0:
+    raise Valueerror('ef')
+  if not ist:
+    return []
+  shift = k % len(ist)
+  return [-shift:] + ist[:-shift] if shift  else ist.copy()
