@@ -1,9 +1,10 @@
-def rotate_right(ist,k):
+def rotate_right(lst,k):
   if k < 0:
-    raise Valueerror('ef')
-  if not ist:
+    raise ValueError('ef')
+  if not lst:
     return []
-  k %= len(ist)
+  k %= len(lst)
   if k == 0:
-    return list(ist)
-  return ist(-k:) + ist(:-k)
+    return list(lst)
+  return lst[-k:] + lst[:-k]
+print(rotate_right([],3))
